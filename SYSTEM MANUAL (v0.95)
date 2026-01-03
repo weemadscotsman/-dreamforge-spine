@@ -1,4 +1,5 @@
 
+
 # DREAMFORGE SPINE // SYSTEM MANUAL (v0.95)
 
 > "Truth is not found; it is forged in the collapse of contradictions."
@@ -46,7 +47,7 @@ The system is composed of six distinct modules connected by a central event bus 
 *   **Short-Term**: Cyclic context window.
 *   **Long-Term**: Vector store of stabilized thoughts.
 *   **Hypothesis Ledger**: Tracks beliefs (Axioms) with status: `Unproven` -> `Reinforced` -> `Disproven`.
-*   **Decay**: Memories lose "mass" (relevance) over time unless reinforced.
+*   **Decay**: Memories lose "mass" (relevance) over time unless reinforced (Entropy).
 
 ### 🔄 [RECURSOR] (The Loop)
 *   **Role**: The controller.
@@ -89,6 +90,12 @@ Executes multi-cycle objectives ("Jobs") rather than single prompts.
     3.  **Verify**: Check if artifact (code/file) meets spec.
     4.  **Commit**: Write to VFS.
 
+### 🌡️ The Fever Engine (`engine/pressure/streak_decay.ts`)
+Visual feedback of cognitive load.
+*   **Concept**: As "Heat" (Entropy/Conflict) rises, the system becomes unstable.
+*   **Effects**: The UI blurs, shakes, and shifts hue.
+*   **Purpose**: To give the operator visceral feedback on the difficulty of the task.
+
 ---
 
 ## 4. VISUALIZATION & TELEMETRY
@@ -111,4 +118,5 @@ Executes multi-cycle objectives ("Jobs") rather than single prompts.
 
 ---
 
+**Dreamforge Spine** is not designed to be "right" instantly. It is designed to be **less wrong** with every cycle.
 **Dreamforge Spine** is not designed to be "right" instantly. It is designed to be **less wrong** with every cycle.
