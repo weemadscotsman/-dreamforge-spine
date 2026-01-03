@@ -1,0 +1,114 @@
+
+# DREAMFORGE SPINE // SYSTEM MANUAL (v0.95)
+
+> "Truth is not found; it is forged in the collapse of contradictions."
+
+## 1. SYSTEM IDENTITY
+
+**Dreamforge Spine** is a Recursive Reasoning Engine. Unlike standard LLM wrappers that optimize for helpfulness or conversational flow, Dreamforge optimizes for **logical coherence**, **autonomy**, and **resilience**.
+
+It transforms LLMs into **Active Reasoning Agents** via a biological architecture:
+1.  **Generation** (The Brain) produces thoughts.
+2.  **Adversarial Attack** (The Twin) attempts to kill those thoughts.
+3.  **Constraints** (The Immune System) filter out hallucinations.
+4.  **Distillation** (Evolution) rewrites the system's own rules based on survival.
+
+---
+
+## 2. ARCHITECTURE (The 6-Organ Machine)
+
+The system is composed of six distinct modules connected by a central event bus (`bridge/orchestrator.ts`).
+
+### ⚡ [MODEL] (The Generator)
+*   **Role**: Raw inference engine.
+*   **Implementation**: Pluggable adapters.
+    *   **Gemini Adapter**: Optimized for high-throughput cloud inference.
+    *   **WebLLM Adapter**: Runs Llama-3/Phi-3 locally in-browser via WebGPU.
+    *   **Ollama Adapter**: Connects to local Ollama instance.
+*   **Behavior**: It performs specific cognitive tasks: `Generate`, `Attack`, `Compress`, `Transcribe`.
+
+### ⚖️ [EVALUATOR] (The Judge)
+*   **Role**: Scores reasoning traces.
+*   **Metrics**:
+    *   **Factuality**: Grounding against retrieved context.
+    *   **Consistency**: Internal logical coherence.
+    *   **Adversarial Resilience**: Did the thought survive the Challenger?
+*   **Output**: A 0-100 score and a "Delta Plan" (instructions for the next recursion cycle).
+
+### 🛡️ [CONSTRAINT] (The Immune System)
+*   **Role**: Enforces hard boundaries and soft stylistic shapes.
+*   **Hard Limits**: "Veto" power over the Judge. If a constraint is violated (e.g., hallucination detected), the cycle is rejected regardless of quality.
+*   **Soft Targets**: "Compress before expand", "Axioms first".
+*   **Identity Shaping**: Injects cryptographic signatures to track provenance.
+
+### 💾 [MEMORY] (The Ledger)
+*   **Role**: Persistence of truth.
+*   **Short-Term**: Cyclic context window.
+*   **Long-Term**: Vector store of stabilized thoughts.
+*   **Hypothesis Ledger**: Tracks beliefs (Axioms) with status: `Unproven` -> `Reinforced` -> `Disproven`.
+*   **Decay**: Memories lose "mass" (relevance) over time unless reinforced.
+
+### 🔄 [RECURSOR] (The Loop)
+*   **Role**: The controller.
+*   **Mechanism**: The **Twin Loop**.
+    1.  **Candidate Generation**: Model proposes a solution.
+    2.  **Attack**: Challenger attempts to break the logic.
+    3.  **Evaluation**: Judge scores the conflict.
+    4.  **Converge**: If score > threshold, accept. Else, recurse with failure context.
+
+### ⚗️ [DISTILLATION] (The Evolution)
+*   **Role**: Metacognition.
+*   **Self-Ratchet**: Adjusts heuristic weights based on win/loss deltas.
+*   **Lesion Map**: Tracks failed strategies. If the system repeats a known failure pattern, it applies a "Pressure" penalty.
+*   **Mutation**: Existing rules are randomly modified to break local maxima.
+
+---
+
+## 3. ADVANCED SUBSYSTEMS (v25)
+
+### 🤖 Autonomy Governor (`autonomy/autonomy_governor.ts`)
+The "Leash" that ensures safety during autonomous loops.
+*   **Levels**:
+    *   `FREE`: Full execution, file writing, tool use allowed.
+    *   `ASSIST`: Requires human confirmation for actions.
+    *   `PAUSE`: Read-only mode.
+    *   `LOCKDOWN`: System halt.
+*   **Inputs**: Monitors user presence (mouse/keyboard), idle time, and explicit commands.
+
+### 👁️ Sensory Deck (`components/VisionModule.tsx`)
+*   **Optic Nerve**: Universal screen capture allows the system to "see" your work.
+    *   *Passive Watch*: Logs screen state changes.
+    *   *Active Intercept*: Interrupts if it detects a critical error or opportunity.
+*   **Bio-Link**: Webcam analysis to detect user frustration or intent.
+
+### 🏗️ Job Runner (`autonomous/job_runner.ts`)
+Executes multi-cycle objectives ("Jobs") rather than single prompts.
+*   **Process**:
+    1.  **Plan**: Break job into steps.
+    2.  **Execute**: Run cycles for current step.
+    3.  **Verify**: Check if artifact (code/file) meets spec.
+    4.  **Commit**: Write to VFS.
+
+---
+
+## 4. VISUALIZATION & TELEMETRY
+
+*   **Latent Map**: Force-directed graph showing the thought process.
+    *   **Green Nodes**: Confident Candidates.
+    *   **Red Nodes**: Challengers/Attacks.
+    *   **Mass**: Heavy nodes are "Crystalized" beliefs; light nodes are drifting.
+*   **Matrix Rain**: Represents raw entropy. Color shifts based on system mood (Cyan=Idle, Red=Error, Green=Success).
+*   **Tension**: The background distorts based on "Recursion Pressure". High difficulty = Visual glitching.
+
+---
+
+## 5. USE CASES
+
+1.  **Rigorous Analysis**: "Analyze this contract for loopholes." (The Challenger will actively try to find them).
+2.  **Autonomous Coding**: "Write a Python script to parse X and save to Y." (Job Runner handles file I/O and validation).
+3.  **Debating**: "Argue for X." (The system will argue against itself to strengthen the final output).
+4.  **Local Research**: Use WebLLM/Ollama to process sensitive documents without sending data to the cloud.
+
+---
+
+**Dreamforge Spine** is not designed to be "right" instantly. It is designed to be **less wrong** with every cycle.
