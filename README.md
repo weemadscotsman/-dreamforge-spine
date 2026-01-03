@@ -1,48 +1,65 @@
-# -dreamforge-spine
-Recursive reasoning engine with evaluator → constraint → memory → recursor → exporter spine.  Not a chatbot. Not a toy. It argues back.
 # DREAMFORGE SPINE // ADVERSARIAL REASONING ENGINE v0.9
 
-> "Truth is not found; it is forged in the collapse of contradictions."
-
-## 📚 DOCUMENTATION
-**[👉 READ THE FULL SYSTEM MANUAL](./docs/SYSTEM_MANUAL.md)**  
-(Covers Architecture, Genetic Distillation, Twin-Loops, and Logic Parsers)
+> **"Truth is not found; it is forged in the collapse of contradictions."**
 
 ---
 
 ## 💀 WHAT IS THIS?
 
-**Dreamforge Spine** is a multi-modal, recursive AI operating system designed for rigorous thought. It rejects the standard "chat" paradigm in favor of an **Adversarial Twin-Loop**: every thought generated is immediately attacked by a nemesis model. Only ideas that survive this collision are output.
+**Dreamforge Spine** is a recursive AI operating system designed for rigorous thought. 
 
-It transforms LLMs from passive text generators into **Active Reasoning Agents** with eyes (Vision), ears (Audio), and memory (Vector/Symbolic).
+**IT IS NOT A CHATBOT.** It does not want to be your friend. It does not optimize for "helpfulness."
+
+It transforms LLMs (Gemini, Llama, Claude) into **Active Reasoning Agents** by wrapping them in a biological architecture:
+1.  **Generation** (The Brain) produces thoughts.
+2.  **Adversarial Attack** (The Twin) attempts to kill those thoughts immediately.
+3.  **Constraints** (The Immune System) filter out hallucinations and structural weakness.
+4.  **Distillation** (Evolution) rewrites the system's own prompt rules based on what survives.
+
+If you ask it a question, it will argue with itself, check its own memory, generate a vector map of its confusion, and only output the result if it survives the internal war.
+
+---
+
+## 🛑 WHO IS THIS FOR?
+
+### ✅ BUILD THIS IF:
+*   You are an **Engineer or Researcher** tired of LLM "drift" and hallucinations.
+*   You want **Autonomy**: An agent that can run in a loop, write files, and self-correct until a job is done.
+*   You want **Local Privacy**: You want to run fully offline (Ollama/WebLLM) but with the power of a recursive architecture.
+*   You want to see the **Latent Space**: You want to visualize *how* the model is thinking, not just read the text.
+
+### ❌ DO NOT BOTHER IF:
+*   You want a "friendly" assistant to write emails or poems.
+*   You are afraid of the terminal or editing JSON configs.
+*   You want a tool that "just works" without configuration. **This is a complex machine.**
+*   You prefer "smooth" conversation over rigorous, sometimes slow, logical deduction.
 
 ---
 
 ## 🧬 KEY CAPABILITIES
 
 ### 1. Universal Neural Link (Multi-Provider)
-Connect to any intelligence backend. Dreamforge creates a unified cognitive layer over:
-*   **Google Gemini** (Flash/Pro/1.5)
-*   **Anthropic Claude** (via REST)
-*   **OpenAI GPT-4o** (via REST)
-*   **Mistral AI** (Le Chat/Large)
-*   **HuggingFace Inference** (Llama 3, Mixtral, etc.)
+A unified cognitive layer over any intelligence backend. Switch instantly between:
+*   **Google Gemini** (Flash/Pro/1.5/2.5)
+*   **Browser Native** (WebLLM - Runs Llama 3 in your Chrome tab, 0 setup)
 *   **Ollama (Local)** - Run entirely offline/air-gapped.
+*   **Anthropic / OpenAI / Mistral** (via REST)
 
 ### 2. Fight Topologies (The Arena)
-Configure how the internal agents collaborate or compete to solve your task:
+Configure how the internal agents collaborate or compete:
 *   **DUEL (1v1)**: Prime vs. Nemesis. Surgical stress testing.
-*   **TAG TEAM (2v2)**: (Prime + Lateral Thinker) vs. (Nemesis + Reductionist). Synthesis of complex ideas.
+*   **TAG TEAM (2v2)**: (Prime + Lateral Thinker) vs. (Nemesis + Reductionist).
 *   **BOSS RUSH (3v1)**: Three variants of a solution vs. One super-powered Critic.
 *   **SWARM (4-WAY)**: Maximum entropy. Four distinct personas competing for the Truth.
 
 ### 3. Sensory Deck
-*   **Optic Nerve (Screen)**: Universal screen capture allows the system to "see" your work, analyze code in VS Code, or watch videos.
-*   **Bio-Link (Webcam)**: Reads user presence and emotional context to adjust system pressure.
+*   **Optic Nerve (Screen)**: Universal screen capture allows the system to "see" your work or analyze code.
+*   **Bio-Link (Webcam)**: Reads user presence and emotional context.
+*   **Nervous System**: The UI glitches and trembles based on the system's internal "Pressure" and "Uncertainty".
 
 ### 4. Evolutionary Learning (Distillation)
-The system rewrites its own instructions based on what works.
-*   **Heuristic Extraction**: Successful reasoning patterns are saved as rules.
+The system learns from its wins.
+*   **Heuristic Extraction**: Successful reasoning patterns are extracted and saved as rules.
 *   **Competition Ring**: Rules fight for limited "attention weight". Weak rules die.
 *   **Lesion Map**: Failed beliefs are entombed. If the system tries to repeat a known mistake, it feels "pain" (Pressure) and corrects course.
 
@@ -71,8 +88,8 @@ The system rewrites its own instructions based on what works.
 3.  Access UI: `http://localhost:3000`
 
 ### Configuration
-Go to the **SETTINGS (CONF)** panel in the UI.
-*   **Provider**: Select your backend (Gemini, Claude, OpenAI, etc.).
+Go to the **CONF (SETTINGS)** panel in the UI.
+*   **Provider**: Select your backend.
 *   **Keys**: Enter API keys directly in the secure inputs.
 *   **Topology**: Select your Fight Mode (Duel, Swarm, etc.).
 
@@ -96,19 +113,22 @@ Autonomous execution loop.
 
 ## 🖥️ INTERFACE GUIDE
 
-*   **CORTEX (Center)**: The main command deck. Displays the conversation and fight logs.
+*   **CORTEX (Center)**: The command deck. Displays the conversation, fight logs, and typewriter output.
 *   **TELEMETRY (Left)**:
     *   **Latent Map**: Force-directed graph of the thought process. Green=Candidate, Red=Attacker.
     *   **Pressure Graphs**: Real-time metrics of system load and conflict.
 *   **SENSORY (Right)**:
     *   **Optic/Bio Feeds**: Live video inputs.
     *   **Evolution Ring**: Visualization of the dominant heuristics.
-    *   **Filesystem**: Virtual File System (VFS) for autonomous artifacts.
+    *   **VFS**: Virtual File System for autonomous artifacts.
 
 ---
 
 ## 🧪 DIAGNOSTICS
 
+Run the **TEST CONNECTION** via the Settings Panel to verify the 6-organ pipeline (Model -> Judge -> Memory -> Constraint -> Recursor -> Distillation) is connected.
+
+> Status: **SYSTEM_ONLINE**
 Run the **Diagnostic Spin Test** via the Settings Panel to verify the 6-organ pipeline (Model -> Judge -> Memory -> Constraint -> Recursor -> Distillation) is connected.
 
 > **Status**: `SYSTEM_ONLINE`
