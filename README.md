@@ -1,4 +1,4 @@
-# DREAMFORGE SPINE // ADVERSARIAL REASONING ENGINE v0.9
+# DREAMFORGE SPINE // v0.95 [CANDIDATE]
 
 > **"Truth is not found; it is forged in the collapse of contradictions."**
 
@@ -6,67 +6,65 @@
 
 ## 💀 WHAT IS THIS?
 
-**Dreamforge Spine** is a recursive AI operating system designed for rigorous thought. 
+**Dreamforge Spine** is a recursive, multi-modal AI operating system designed for **autonomous reasoning**.
 
-**IT IS NOT A CHATBOT.** It does not want to be your friend. It does not optimize for "helpfulness."
+Unlike standard chat interfaces that optimize for speed or politeness, Spine optimizes for **epistemic rigor**. It wraps any LLM (Gemini, Llama, Claude) in a biological architecture that forces it to argue against itself, validate assumptions, and rewrite its own operating rules based on survival.
 
-It transforms LLMs (Gemini, Llama, Claude) into **Active Reasoning Agents** by wrapping them in a biological architecture:
-1.  **Generation** (The Brain) produces thoughts.
-2.  **Adversarial Attack** (The Twin) attempts to kill those thoughts immediately.
-3.  **Constraints** (The Immune System) filter out hallucinations and structural weakness.
-4.  **Distillation** (Evolution) rewrites the system's own prompt rules based on what survives.
+**Status:** `v0.95` (Candidate Release)
+**Architecture:** 6-Organ Biomechanical (Model, Evaluator, Constraint, Memory, Recursor, Distillation)
 
-If you ask it a question, it will argue with itself, check its own memory, generate a vector map of its confusion, and only output the result if it survives the internal war.
+---
+
+## 🚀 NEW IN v0.95
+
+*   **BROWSER-NATIVE INFERENCE**: Run **Llama-3 8B** or **Phi-3.5** locally in your browser via WebGPU. No API keys required. Privacy preserved.
+*   **AUTONOMOUS JOB LOOPS**: Give the system a goal ("Research X", "Write Code Y"). It enters a self-governed loop, creating artifacts until the job is done.
+*   **VISION & BIO-LINK**: The system can see your screen and read your webcam to detect frustration or intent, adapting its strategy in real-time.
+*   **SELF-HEALING MEMORY**: Beliefs (Axioms) decay over time if not reinforced. Dead beliefs are tracked in a "Lesion Map" to prevent repeating mistakes.
 
 ---
 
 ## 🛑 WHO IS THIS FOR?
 
 ### ✅ BUILD THIS IF:
-*   You are an **Engineer or Researcher** tired of LLM "drift" and hallucinations.
-*   You want **Autonomy**: An agent that can run in a loop, write files, and self-correct until a job is done.
-*   You want **Local Privacy**: You want to run fully offline (Ollama/WebLLM) but with the power of a recursive architecture.
-*   You want to see the **Latent Space**: You want to visualize *how* the model is thinking, not just read the text.
+*   You need an **Autonomous Agent** that can write files, execute code logic, and critique its own work.
+*   You want **Local Privacy**: Run fully offline with Ollama or WebLLM.
+*   You want to visualize the **Latent Space**: See the force-directed graph of the thought process.
+*   You are a Researcher studying **LLM Cognitive Architectures**.
 
 ### ❌ DO NOT BOTHER IF:
-*   You want a "friendly" assistant to write emails or poems.
+*   You want a "friendly" chatbot for casual conversation.
 *   You are afraid of the terminal or editing JSON configs.
-*   You want a tool that "just works" without configuration. **This is a complex machine.**
-*   You prefer "smooth" conversation over rigorous, sometimes slow, logical deduction.
+*   You expect 100ms latency (Deep reasoning takes time).
 
 ---
 
 ## 🧬 KEY CAPABILITIES
 
 ### 1. Universal Neural Link (Multi-Provider)
-A unified cognitive layer over any intelligence backend. Switch instantly between:
-*   **Google Gemini** (Flash/Pro/1.5/2.5)
-*   **Browser Native** (WebLLM - Runs Llama 3 in your Chrome tab, 0 setup)
-*   **Ollama (Local)** - Run entirely offline/air-gapped.
-*   **Anthropic / OpenAI / Mistral** (via REST)
+Switch instantly between backends without restarting:
+*   **Google Gemini** (1.5 Flash/Pro, 2.0 Flash) - High speed, massive context.
+*   **WebLLM (WebGPU)** - Run Llama-3 directly in Chrome/Edge. Zero server cost.
+*   **Ollama (Local)** - Air-gapped local inference.
+*   **OpenAI / Anthropic** - Legacy support via API.
 
 ### 2. Fight Topologies (The Arena)
 Configure how the internal agents collaborate or compete:
 *   **DUEL (1v1)**: Prime vs. Nemesis. Surgical stress testing.
-*   **TAG TEAM (2v2)**: (Prime + Lateral Thinker) vs. (Nemesis + Reductionist).
+*   **TAG TEAM (2v2)**: (Prime + Lateral) vs. (Nemesis + Reductionist).
 *   **BOSS RUSH (3v1)**: Three variants of a solution vs. One super-powered Critic.
 *   **SWARM (4-WAY)**: Maximum entropy. Four distinct personas competing for the Truth.
 
-### 3. Sensory Deck
-*   **Optic Nerve (Screen)**: Universal screen capture allows the system to "see" your work or analyze code.
-*   **Bio-Link (Webcam)**: Reads user presence and emotional context.
-*   **Nervous System**: The UI glitches and trembles based on the system's internal "Pressure" and "Uncertainty".
+### 3. Autonomy & Agency
+*   **Auto-Loop**: The system pursues a goal through multiple cycles of generation, critique, and refinement.
+*   **Governor**: A safety module ("The Leash") that restricts execution permissions (File Write, Shell Exec) based on user presence and trust level.
+*   **Dream Protocol**: When idle, the system hallucinates on existing beliefs to synthesize new axioms.
 
 ### 4. Evolutionary Learning (Distillation)
 The system learns from its wins.
-*   **Heuristic Extraction**: Successful reasoning patterns are extracted and saved as rules.
-*   **Competition Ring**: Rules fight for limited "attention weight". Weak rules die.
-*   **Lesion Map**: Failed beliefs are entombed. If the system tries to repeat a known mistake, it feels "pain" (Pressure) and corrects course.
-
-### 5. Autonomous Agency
-*   **Dream Protocol**: When idle, the system hallucinates on existing beliefs to forge new axioms (cost-controlled).
-*   **Auto-Loop**: Give it a job (e.g., "Research X"). It enters a self-governed loop until the job is done.
-*   **Governor**: A safety layer that restricts autonomy levels (Free, Assist, Pause) based on human presence.
+*   **Heuristic Extraction**: Successful reasoning patterns are extracted as rules.
+*   **Self-Ratchet**: Weights for these rules are adjusted based on victory margins.
+*   **Graveyard**: Failed strategies are buried. If the system tries to use a dead strategy, it feels "pressure" and diverges.
 
 ---
 
@@ -74,7 +72,8 @@ The system learns from its wins.
 
 ### Prerequisites
 *   **Node.js** (v18+)
-*   **API Keys** (for Cloud models) OR **Ollama** (for Local)
+*   **WebGPU Browser** (Chrome 113+, Edge) for Local Mode
+*   **API Key** (Gemini/OpenAI) OR **Ollama** installed
 
 ### Installation
 1.  Clone & Install:
@@ -88,47 +87,48 @@ The system learns from its wins.
 3.  Access UI: `http://localhost:3000`
 
 ### Configuration
-Go to the **CONF (SETTINGS)** panel in the UI.
-*   **Provider**: Select your backend.
-*   **Keys**: Enter API keys directly in the secure inputs.
-*   **Topology**: Select your Fight Mode (Duel, Swarm, etc.).
+1.  Open the **CONF (SETTINGS)** panel.
+2.  **Provider**: Choose `WEBLLM` (Local) or `GEMINI` (Cloud).
+3.  **Topology**: Select `DUEL_1V1` for standard tasks or `SWARM_4_WAY` for complex brainstorming.
 
 ---
 
 ## 🕹️ OPERATIONAL MODES
 
 ### MANUAL (User Driven)
-Standard interaction. You prompt, the system thinks, fights, and responds. Use the **Terminal** at the bottom.
-
-### DREAM (Idle Reflection)
-The system automatically samples its **Belief Ledger** when idle. It connects random concepts to generate new insights.
-*   *Config*: Adjust "Dream Budget" in Settings to control costs.
+Standard command deck. You prompt, the system thinks, fights, and responds.
+*   *Best for:* Specific questions, debugging, creative writing.
 
 ### AUTO (Autonomous Job)
-Autonomous execution loop.
-*   **Trigger**: Click "INITIATE AUTO THINK" in Settings.
-*   **Behavior**: The system will pursue the current context/goal until convergence or failure.
+Click **INITIATE AUTO THINK** or use the **Job Runner**.
+*   *Best for:* "Refactor this file", "Research this topic", "Generate a test suite".
+*   *Governor:* Ensure Autonomy Level is set to `FREE` or `ASSIST`.
+
+### DREAM (Idle Reflection)
+The system automatically samples its **Belief Ledger** when idle.
+*   *Behavior:* It connects random concepts to generate new axioms.
+*   *Output:* New beliefs appear in the "Belief Fire" telemetry panel.
 
 ---
 
 ## 🖥️ INTERFACE GUIDE
 
-*   **CORTEX (Center)**: The command deck. Displays the conversation, fight logs, and typewriter output.
+*   **CORTEX (Center)**: The command deck. Displays the conversation and fight logs.
 *   **TELEMETRY (Left)**:
-    *   **Latent Map**: Force-directed graph of the thought process. Green=Candidate, Red=Attacker.
-    *   **Pressure Graphs**: Real-time metrics of system load and conflict.
+    *   **Latent Map**: Force-directed graph of thoughts. Green=Candidate, Red=Attacker.
+    *   **Distillation Feed**: Real-time log of heuristic evolution.
 *   **SENSORY (Right)**:
-    *   **Optic/Bio Feeds**: Live video inputs.
-    *   **Evolution Ring**: Visualization of the dominant heuristics.
+    *   **Optic/Bio Feeds**: Live screen and webcam analysis.
+    *   **Evolution Ring**: Visualization of dominant heuristics.
     *   **VFS**: Virtual File System for autonomous artifacts.
 
 ---
 
 ## 🧪 DIAGNOSTICS
 
-Run the **TEST CONNECTION** via the Settings Panel to verify the 6-organ pipeline (Model -> Judge -> Memory -> Constraint -> Recursor -> Distillation) is connected.
+Run **RUN DIAGNOSTIC SPIN** in Settings to verify the 6-organ pipeline.
+*   Checks WebGPU availability.
+*   Verifies Vector Math engine.
+*   Tests Memory persistence.
 
-> Status: **SYSTEM_ONLINE**
-Run the **Diagnostic Spin Test** via the Settings Panel to verify the 6-organ pipeline (Model -> Judge -> Memory -> Constraint -> Recursor -> Distillation) is connected.
-
-> **Status**: `SYSTEM_ONLINE`
+> System Status: **ONLINE**
